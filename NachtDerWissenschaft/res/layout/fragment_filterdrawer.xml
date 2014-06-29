@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app1="http://schemas.android.com/apk/res/com.example.nachtderwissenschaft"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/headersortierung"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sortierung" />
+
+    <Spinner
+        android:id="@+id/sortingspinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:id="@+id/filterlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/headerfilter"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter" />
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/filterwissenschaftsjahr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:text="CircularProgressButton"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:textComplete="Nacht der Wissenschaft"
+            app:textError="Nacht der Wissenschaft"
+            app:textIdle="Nacht der Wissenschaft" />
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/filterjugendliche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:textComplete="für Jugendliche"
+            app:textError="für Jugendliche"
+            app:textIdle="für Jugendliche" />
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/filterbisdreizehn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:textComplete="bis 13 Jahre"
+            app:textError="bis 13 Jahre"
+            app:textIdle="bis 13 Jahre" />
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/filterbarrierefrei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:textComplete="barrierefrei"
+            app:textError="barrierefrei"
+            app:textIdle="barrierefrei" />
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/filterfamilienfreundlich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:textComplete="familienfreundlich"
+            app:textError="familienfreundlich"
+            app:textIdle="familienfreundlich" />
+    </LinearLayout>
+
+</LinearLayout>

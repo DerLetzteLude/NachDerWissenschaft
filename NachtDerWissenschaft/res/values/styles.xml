@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:popupMenuStyle">@style/MyApp.PopupMenu</item>
+    </style>
+
+    <style name="MyApp.PopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/grape_primary</item>
+    </style>
+
+</resources>

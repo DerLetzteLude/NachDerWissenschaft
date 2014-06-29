@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.nachtderwissenschaft"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/familienfreundlich"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/card_background_padding"
+        android:orientation="vertical" >
+
+        <com.cengalabs.flatui.views.FlatTextView
+            android:id="@+id/instituttitel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_toLeftOf="@+id/institutimage"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Veranstaltungstitel"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            app:fontWeight="bold" />
+
+        <TextView
+            android:id="@+id/veranstaltungstyp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/instituttitel"
+            android:layout_below="@id/instituttitel"
+            android:layout_marginTop="10dp"
+            android:text="Veranstaltungen:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/veranstaltungsanzahl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/veranstaltungstyp"
+            android:layout_alignBottom="@+id/veranstaltungstyp"
+            android:layout_toRightOf="@+id/veranstaltungstyp"
+            android:text="FlatTextView"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/veranstaltungstyp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_bus" />
+
+        <TextView
+            android:id="@+id/haltestelle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="FlatTextView"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/institutimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_googlemaps" />
+    </RelativeLayout>
+
+</FrameLayout>

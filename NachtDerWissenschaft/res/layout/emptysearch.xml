@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.nachtderwissenschaft"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.cengalabs.flatui.views.FlatTextView
+        android:id="@+id/flatTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Keine Veranstaltungen gefunden"
+        android:textSize="30sp"
+        app:fontWeight="bold" />
+
+</FrameLayout>

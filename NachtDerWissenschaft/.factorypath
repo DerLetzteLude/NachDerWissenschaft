@@ -1,0 +1,6 @@
+<factorypath>
+    <factorypathentry kind="WKSPJAR" id="/NachtDerWissenschaft/libs/butterknife-5.0.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/NachtDerWissenschaft/libs/icepick-2.3.5.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/NachtDerWissenschaft/libs/icepick-processor-2.3.5.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/NachtDerWissenschaft/libs/guava-17.0.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>
