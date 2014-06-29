@@ -1,5 +1,6 @@
 package com.example.fragments;
 
+import com.dd.CircularProgressButton;
 import com.example.nachtderwissenschaft.ActivityInterface;
 import com.example.nachtderwissenschaft.R;
 
@@ -19,16 +20,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
-
-import com.dd.CircularProgressButton;
-
 import de.greenrobot.event.EventBus;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.CompoundButton.OnCheckedChangeListener;
-import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.TableLayout;
 
 public class FragmentFilter extends Fragment {
 
@@ -39,7 +37,7 @@ public class FragmentFilter extends Fragment {
 	@InjectView(R.id.filterfamilienfreundlich) CircularProgressButton mfilterFamilienfreundlich;
 	@InjectView(R.id.filterjugendliche) CircularProgressButton mfilterJugendliche;
 	@InjectView(R.id.filterwissenschaftsjahr) CircularProgressButton mfilterWissenschaftsjahr;
-	@InjectView(R.id.filterlayout) LinearLayout mFilterLayout;
+	@InjectView(R.id.filterlayout) TableLayout mFilterLayout;
 	@InjectView(R.id.sortingspinner) Spinner mSpinner;
 	EventBus bus = EventBus.getDefault();
 	ActivityInterface mInterface;

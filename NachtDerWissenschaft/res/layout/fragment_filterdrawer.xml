@@ -22,7 +22,7 @@
         android:layout_marginRight="2dp"
         android:layout_marginTop="5dp" />
 
-    <LinearLayout
+    <TableLayout
         android:id="@+id/filterlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,73 +35,138 @@
             android:layout_height="wrap_content"
             android:text="Filter" />
 
-        <com.dd.CircularProgressButton
-            android:id="@+id/filterwissenschaftsjahr"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginTop="5dp"
-            android:text="CircularProgressButton"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:textComplete="Nacht der Wissenschaft"
-            app:textError="Nacht der Wissenschaft"
-            app:textIdle="Nacht der Wissenschaft" />
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" >
 
-        <com.dd.CircularProgressButton
-            android:id="@+id/filterjugendliche"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:textComplete="für Jugendliche"
-            app:textError="für Jugendliche"
-            app:textIdle="für Jugendliche" />
+            <com.example.nachtderwissenschaft.SquareImageView
+                android:id="@+id/squareImageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@null" />
 
-        <com.dd.CircularProgressButton
-            android:id="@+id/filterbisdreizehn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginTop="5dp"
-            android:textAppearance="@android:style/TextAppearance.Small"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:textComplete="bis 13 Jahre"
-            app:textError="bis 13 Jahre"
-            app:textIdle="bis 13 Jahre" />
+            <com.dd.CircularProgressButton
+                android:id="@+id/filterwissenschaftsjahr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:text="CircularProgressButton"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:textComplete="Nacht der Wissenschaft"
+                app:textError="Nacht der Wissenschaft"
+                app:textIdle="Nacht der Wissenschaft" />
 
-        <com.dd.CircularProgressButton
-            android:id="@+id/filterbarrierefrei"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:textComplete="barrierefrei"
-            app:textError="barrierefrei"
-            app:textIdle="barrierefrei" />
+        </TableRow>
 
-        <com.dd.CircularProgressButton
-            android:id="@+id/filterfamilienfreundlich"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginTop="5dp"
-            android:textAppearance="@android:style/TextAppearance.Small"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:textComplete="familienfreundlich"
-            app:textError="familienfreundlich"
-            app:textIdle="familienfreundlich" />
-    </LinearLayout>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp" >
+
+            <com.example.nachtderwissenschaft.SquareImageView
+                android:id="@+id/squareImageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_young" />
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/filterjugendliche"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:textComplete="für Jugendliche"
+                app:textError="für Jugendliche"
+                app:textIdle="für Jugendliche" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp" >
+
+            <com.example.nachtderwissenschaft.SquareImageView
+                android:id="@+id/squareImageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_thirteen" />
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/filterbisdreizehn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:textComplete="bis 13 Jahre"
+                app:textError="bis 13 Jahre"
+                app:textIdle="bis 13 Jahre" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp" >
+
+            <com.example.nachtderwissenschaft.SquareImageView
+                android:id="@+id/squareImageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_disabled" />
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/filterbarrierefrei"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:textComplete="barrierefrei"
+                app:textError="barrierefrei"
+                app:textIdle="barrierefrei" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp" >
+
+            <com.example.nachtderwissenschaft.SquareImageView
+                android:id="@+id/squareImageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_family" />
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/filterfamilienfreundlich"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:textComplete="familienfreundlich"
+                app:textError="familienfreundlich"
+                app:textIdle="familienfreundlich" />
+
+        </TableRow>
+    </TableLayout>
 
 </LinearLayout>

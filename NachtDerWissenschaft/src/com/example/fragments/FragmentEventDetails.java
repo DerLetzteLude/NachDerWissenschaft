@@ -100,7 +100,7 @@ public class FragmentEventDetails extends Fragment {
 		txtInstitutName.setText(mInstitut.getName());
 		txtZeit.setText(mVeranstaltung.getZeit());
 
-		Picasso.with(getActivity()).load(R.drawable.img_halle_night).centerCrop().fit().into(imgHeader);
+		Picasso.with(getActivity()).load(R.drawable.img_halle_nightjpg).centerCrop().fit().into(imgHeader);
 		// Playservice check
 		int status = GooglePlayServicesUtil.isGooglePlayServicesAvailable(getActivity());
 		if (status == ConnectionResult.SUCCESS) {

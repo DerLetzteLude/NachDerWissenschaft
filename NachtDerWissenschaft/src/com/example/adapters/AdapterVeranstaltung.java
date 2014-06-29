@@ -19,7 +19,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class AdapterVeranstaltung extends ArrayAdapter<Veranstaltung> {
-
 	private Context mContext;
 	private int mLayoutResourceId;
 	private InstitutDao mInstitutDao;
@@ -122,6 +121,7 @@ public class AdapterVeranstaltung extends ArrayAdapter<Veranstaltung> {
 			holder.bottomLeft = (ImageView) convertView.findViewById(R.id.imagebottomleft);
 			holder.bottomRight = (ImageView) convertView.findViewById(R.id.imagebottomright);
 			holder.txtTyp = (FlatTextView) convertView.findViewById(R.id.veranstaltungstyp);
+			holder.txtZeit = (FlatTextView) convertView.findViewById(R.id.zeit);
 			convertView.setTag(holder);
 		} else {
 			holder = (ViewHolder) convertView.getTag();
@@ -135,6 +135,7 @@ public class AdapterVeranstaltung extends ArrayAdapter<Veranstaltung> {
 		holder.txtTitle.setText(this.getItem(position).getTitel());
 		holder.txtInstitut.setText(mInstitutDao.load(this.getItem(position).getInstitutId()).getName());
 		holder.txtTyp.setText(this.getItem(position).getTyp());
+		holder.txtZeit.setText(this.getItem(position).getZeit());
 
 		if (ver.getBarrierefrei()) {
 			holder.topLeft.setVisibility(View.VISIBLE);
@@ -154,7 +155,7 @@ public class AdapterVeranstaltung extends ArrayAdapter<Veranstaltung> {
 
 	static class ViewHolder {
 		public TextView txtTitle;
-		public FlatTextView txtInstitut, txtTyp;
+		public FlatTextView txtInstitut, txtTyp, txtZeit;
 		public ImageView topLeft, topRight, bottomLeft, bottomRight;
 
 	}

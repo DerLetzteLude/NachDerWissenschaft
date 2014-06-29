@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res/com.example.nachtderwissenschaft"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="10dp"
-     >
+    android:paddingBottom="10dp" >
 
     <RelativeLayout
         android:id="@+id/familienfreundlich"
@@ -20,6 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+            android:paddingLeft="10dp"
             android:textColor="@android:color/white"
             app:backgroundColor="darker"
             app:cornerRadius="0sp" />
@@ -107,6 +107,17 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <com.cengalabs.flatui.views.FlatTextView
+            android:id="@+id/zeit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filters"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/white"
+            app:backgroundColor="darker"
+            app:cornerRadius="0sp" />
     </RelativeLayout>
 
 </FrameLayout>

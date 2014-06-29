@@ -34,7 +34,7 @@
             android:layout_alignLeft="@+id/instituttitel"
             android:layout_below="@id/instituttitel"
             android:layout_marginTop="10dp"
-            android:text="Veranstaltungen:"
+            android:text="Veranstaltungen: "
             android:textStyle="bold" />
 
         <TextView
