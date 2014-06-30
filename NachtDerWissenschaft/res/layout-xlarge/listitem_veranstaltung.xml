@@ -33,54 +33,54 @@
             android:padding="3dip" >
 
             <GridLayout
-                android:layout_width="80dip"
-                android:layout_height="80dip"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
                 android:columnCount="2"
                 android:rowCount="2" >
 
                 <ImageView
                     android:id="@+id/imagetopleft"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                   android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_column="0"
                     android:layout_gravity="top|left"
                     android:layout_row="0"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_disabled"
+                    android:src="@drawable/barrierefrei"
                     android:visibility="invisible" />
 
                 <ImageView
                     android:id="@+id/imagetopright"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                  android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_column="1"
                     android:layout_gravity="top|right"
                     android:layout_row="0"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_thirteen"
+                    android:src="@drawable/dreizehn"
                     android:visibility="invisible" />
 
                 <ImageView
                     android:id="@+id/imagebottomleft"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                   android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_column="0"
                     android:layout_gravity="bottom|left"
                     android:layout_row="1"
                     android:cropToPadding="false"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_family"
+                    android:src="@drawable/familien"
                     android:visibility="invisible" />
 
                 <ImageView
                     android:id="@+id/imagebottomright"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_column="1"
                     android:layout_gravity="bottom|right"
                     android:layout_row="1"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_young"
+                    android:src="@drawable/jugendliche"
                     android:visibility="invisible" />
             </GridLayout>
         </LinearLayout>

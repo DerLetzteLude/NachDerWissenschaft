@@ -45,8 +45,8 @@
 
             <com.example.nachtderwissenschaft.SquareImageView
                 android:id="@+id/squareImageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@null" />
 
             <com.dd.CircularProgressButton
@@ -60,7 +60,6 @@
                 app:textComplete="Nacht der Wissenschaft"
                 app:textError="Nacht der Wissenschaft"
                 app:textIdle="Nacht der Wissenschaft" />
-
         </TableRow>
 
         <TableRow
@@ -72,9 +71,9 @@
 
             <com.example.nachtderwissenschaft.SquareImageView
                 android:id="@+id/squareImageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_young" />
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/jugendliche" />
 
             <com.dd.CircularProgressButton
                 android:id="@+id/filterjugendliche"
@@ -86,7 +85,6 @@
                 app:textComplete="für Jugendliche"
                 app:textError="für Jugendliche"
                 app:textIdle="für Jugendliche" />
-
         </TableRow>
 
         <TableRow
@@ -98,9 +96,9 @@
 
             <com.example.nachtderwissenschaft.SquareImageView
                 android:id="@+id/squareImageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_thirteen" />
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/dreizehn" />
 
             <com.dd.CircularProgressButton
                 android:id="@+id/filterbisdreizehn"
@@ -113,7 +111,6 @@
                 app:textComplete="bis 13 Jahre"
                 app:textError="bis 13 Jahre"
                 app:textIdle="bis 13 Jahre" />
-
         </TableRow>
 
         <TableRow
@@ -125,9 +122,9 @@
 
             <com.example.nachtderwissenschaft.SquareImageView
                 android:id="@+id/squareImageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_disabled" />
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/barrierefrei" />
 
             <com.dd.CircularProgressButton
                 android:id="@+id/filterbarrierefrei"
@@ -139,7 +136,6 @@
                 app:textComplete="barrierefrei"
                 app:textError="barrierefrei"
                 app:textIdle="barrierefrei" />
-
         </TableRow>
 
         <TableRow
@@ -150,9 +146,9 @@
 
             <com.example.nachtderwissenschaft.SquareImageView
                 android:id="@+id/squareImageView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_family" />
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/familien" />
 
             <com.dd.CircularProgressButton
                 android:id="@+id/filterfamilienfreundlich"
@@ -165,7 +161,6 @@
                 app:textComplete="familienfreundlich"
                 app:textError="familienfreundlich"
                 app:textIdle="familienfreundlich" />
-
         </TableRow>
     </TableLayout>
 

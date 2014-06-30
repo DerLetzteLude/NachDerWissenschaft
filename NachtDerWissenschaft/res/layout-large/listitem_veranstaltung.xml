@@ -47,7 +47,7 @@
                     android:layout_gravity="top|left"
                     android:layout_row="0"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_disabled"
+                    android:src="@drawable/barrierefrei"
                     android:visibility="invisible" />
 
                 <ImageView
@@ -58,7 +58,7 @@
                     android:layout_gravity="top|right"
                     android:layout_row="0"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_thirteen"
+                    android:src="@drawable/dreizehn"
                     android:visibility="invisible" />
 
                 <ImageView
@@ -70,7 +70,7 @@
                     android:layout_row="1"
                     android:cropToPadding="false"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_family"
+                    android:src="@drawable/familien"
                     android:visibility="invisible" />
 
                 <ImageView
@@ -81,7 +81,7 @@
                     android:layout_gravity="bottom|right"
                     android:layout_row="1"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_young"
+                    android:src="@drawable/jugendliche"
                     android:visibility="invisible" />
             </GridLayout>
         </LinearLayout>
