@@ -15,6 +15,8 @@ import Events.EventSortList;
 import android.content.Context;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -28,7 +30,7 @@ public class AdapterInstitut extends ArrayAdapter<Institut> {
 	private VeranstaltungDao mVeranstaltungsDao;
 	private MapClickListener mapClickListener;
 	private EventSortList mSorting;
-	private Institut mInstitut;
+	private int mLastPosition = -1;
 
 	public AdapterInstitut(Context context, int resource, DaoSession daoSession, MapClickListener mapClickListener) {
 		super(context, resource);
@@ -105,6 +107,15 @@ public class AdapterInstitut extends ArrayAdapter<Institut> {
 				mapClickListener.onBtnClick(number);
 			}
 		});
+		TranslateAnimation animation = null;
+		if (position > mLastPosition) {
+			animation = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, 0.0f,
+					Animation.RELATIVE_TO_SELF, 1.0f, Animation.RELATIVE_TO_SELF, 0.0f);
+
+			animation.setDuration(600);
+			convertView.startAnimation(animation);
+			mLastPosition = position;
+		}
 		return convertView;
 	}
 

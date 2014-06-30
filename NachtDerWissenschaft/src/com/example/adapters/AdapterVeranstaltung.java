@@ -8,12 +8,15 @@ import com.example.dao.Veranstaltung;
 import com.example.dao.VeranstaltungDao;
 import com.example.dao.VeranstaltungDao.Properties;
 import com.example.nachtderwissenschaft.R;
+import com.google.android.gms.internal.gt;
 
 import de.greenrobot.dao.query.QueryBuilder;
 import Events.EventSortList;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -24,6 +27,7 @@ public class AdapterVeranstaltung extends ArrayAdapter<Veranstaltung> {
 	private InstitutDao mInstitutDao;
 	private VeranstaltungDao mVeranstaltungDao;
 	EventSortList mSorting;
+	private int mLastPosition = -1;
 
 	Institut mInstitut;
 	Boolean mFavorites = false;
@@ -148,6 +152,16 @@ public class AdapterVeranstaltung extends ArrayAdapter<Veranstaltung> {
 		}
 		if (ver.getJugendliche()) {
 			holder.bottomRight.setVisibility(View.VISIBLE);
+		}
+
+		TranslateAnimation animation = null;
+		if (position > mLastPosition) {
+			animation = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, 0.0f,
+					Animation.RELATIVE_TO_SELF, 1.0f, Animation.RELATIVE_TO_SELF, 0.0f);
+
+			animation.setDuration(600);
+			convertView.startAnimation(animation);
+			mLastPosition = position;
 		}
 
 		return convertView;
